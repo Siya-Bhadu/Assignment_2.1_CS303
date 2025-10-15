@@ -221,7 +221,9 @@ int main() {
     }
     sll.print(); // Exit the loop and print 
 
-    std::cout << "The front of the list is: " << sll.pop_front() << std::endl; // Take off the last value and print the item 
+    int popped_value = sll.pop_front();
+    cout << "Front of the list was popped: " << popped_value << endl;
+    cout << "List after popping the front: ";
     sll.print();
 
     cout << "Please insert the index that you want to insert: "; // Ask for the value to insert 
@@ -239,7 +241,7 @@ int main() {
     cout << "The index of the number is: " << sll.find(found_number) << std::endl; // Call the find number function 
     sll.print(); 
 
-    cout << "Insert the Index that is desired to be removed: "; // Ask for the index to be found 
+    cout << "Insert the index that is desired to be removed: "; // Ask for the index to be found 
     cin >> index_to_remove;
     sll.remove(index_to_remove); // Call index to remove function
     sll.print();
