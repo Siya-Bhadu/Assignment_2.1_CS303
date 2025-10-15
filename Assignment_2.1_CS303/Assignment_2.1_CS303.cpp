@@ -213,7 +213,7 @@ int main() {
 
     while (num_items <= 4)
     {
-        cout << "Please add a number to the back of the list "; // Ask for numbers to add to the end of a list 
+        cout << "Please add a number to the back of the list. "; // Ask for numbers to add to the end of a list 
         cin >> new_number; // Get the input for the new number 
         sll.push_back(new_number); // Call the push back function 
         num_items++; // Increment num_items 
