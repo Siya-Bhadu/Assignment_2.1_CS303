@@ -1,4 +1,4 @@
-# Assignment_2.1_CS303
+# Assignment 2 CS303 - Question 1 - Singly Linked Lists
 <img width="1726" height="754" alt="Screenshot 2025-10-15 175925" src="https://github.com/user-attachments/assets/172cb412-ca21-479c-ac39-902fdf44d185" />
 <img width="1729" height="780" alt="Screenshot 2025-10-15 180003" src="https://github.com/user-attachments/assets/22ba2445-4dc5-47c5-bacd-0fd2af65d5c0" />
 <img width="1726" height="720" alt="Screenshot 2025-10-15 180036" src="https://github.com/user-attachments/assets/3c0a0772-5cc3-4b2e-b16a-9b04203a7386" />
