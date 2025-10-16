@@ -1,7 +1,8 @@
 # Assignment 2 - CS303 (Data Structures)
 ## Question 1 - Singly Linked Lists
 ## Description
-This C++ program implements a single linked list and allows users to perform the following operations:
+The following program creates and modifies a singly linked list in C++. This allows the user to input numbers from both the front and back of the list, then alter the list by index and perform other actions.
+It can perform the following actions:
 - Add numbers to the front of a list (push_front).
 - Add numbers to the back of a list (push_back).
 - Remove numbers from the front of a list (pop_front).
