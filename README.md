@@ -9,6 +9,9 @@ This C++ program implements a single linked list and allows users to perform the
 - Access the first element of a list without removing it (front).
 - Access the last element of a list without removing it (back).
 - Check if the list is empty (empty.)
+- Insert an item at a specified index (insert(size_t index, const Item_Type& item)): Inserts the item at a the given index starting at 0. If the index is beyond the end of the list, the item is added to the back.
+- Remove an item at a specified index (remove(size_t index)): Removes the item at the given index. Returns true if successful, false if the index is invalid.
+- Find the index of the first occurrence of an item (find(const Item_Type& item)): Returns the index if the item is found, or the size of the list if not found.
 
 ## Files
 - Assignment_2.1_CS303.cpp - Main program with all function implementations.
