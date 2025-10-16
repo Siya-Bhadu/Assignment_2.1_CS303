@@ -20,8 +20,8 @@ private:
     size_t num_items;
 
 public:
-    Single_Linked_List() : head(nullptr), tail(nullptr), num_items(0) {}
-    ~Single_Linked_List();
+    Single_Linked_List() : head(nullptr), tail(nullptr), num_items(0) {} // Constructor: Initializes an empty list
+    ~Single_Linked_List(); // Destructor: Deletes all nodes to free memory
 
     void push_front(const Item_Type& item);
     void push_back(const Item_Type& item);

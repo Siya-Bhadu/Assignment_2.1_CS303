@@ -4,7 +4,7 @@
 #include <stdexcept>
 using namespace std;
 template <typename Item_Type>
-class Node { // Create a Class
+class Node { // Create a Node Class representing an element in the linked list.
 public:
     Item_Type item;
     Node* next;
@@ -16,9 +16,9 @@ public:
 template <typename Item_Type>
 class Single_Linked_List { // Create the Single Linked List Class
 private:
-    Node<Item_Type>* head; // Define the Head and Tail
+    Node<Item_Type>* head; // Pointers to the first (head) and last (tail) nodes.
     Node<Item_Type>* tail;
-    size_t num_items; // Define num_items
+    size_t num_items; // Tracks number of nodes in the list.
 
 public:
     Single_Linked_List() : head(nullptr), tail(nullptr), num_items(0) {} // Define the pointers
@@ -34,7 +34,7 @@ public:
         Node<Item_Type>* new_node = new Node<Item_Type>(item);
         new_node->next = head; // Place new node before head
         head = new_node; // Define the new node as the head
-        if (tail == nullptr) { // Check to make sure there is a tail
+        if (tail == nullptr) { // If list was empty, tail also points to the new node.
             tail = new_node;
         }
         num_items++; // Increment num_items
@@ -50,7 +50,7 @@ public:
             head = new_node;
         }
         tail = new_node;
-        num_items++; // Add one to num_items
+        num_items++; // Increment num_items
     }
 
 
@@ -66,7 +66,7 @@ public:
         if (head == nullptr) { // If the head is null, then make the tail null too
             tail = nullptr;
         }
-        num_items--; // Subtract one from num_items
+        num_items--; // Deincrement num_items
         return removed_item;
     }
 
@@ -76,7 +76,7 @@ public:
             throw std::out_of_range("Pop from empty list"); // Check to make sure that there is an item to pop
         }
         if (head == tail) {
-            Item_Type removed_item = head->item; // Checking if the head was removed item or if the list was only one item
+            Item_Type removed_item = head->item; // If the list has only one node, remove it and set head/tail to nullptr.
             delete head;
             head = tail = nullptr;
             num_items--;
@@ -92,7 +92,7 @@ public:
         delete tail;
         tail = current;
         tail->next = nullptr;
-        num_items--; // Lower the count of num items
+        num_items--; // Deincrement num_items
         return removed_item; // Return the removed item
 
     }
@@ -129,12 +129,12 @@ public:
         else {
             Node<Item_Type>* new_node = new Node<Item_Type>(item);
             Node <Item_Type>* current = head;
-            for (size_t i = 0; i < index - 1; i++) { // Set i = 0 and the index -1
+            for (size_t i = 0; i < index - 1; i++) { // Traverse to node just before insertion index
                 current = current->next; // Update the pointers of the list
             }
             new_node->next = current->next; // Update the pointers of the list
             current->next = new_node;
-            num_items++; // Add one to num_items
+            num_items++; // Increment num_items
         }
     }
 
@@ -167,7 +167,7 @@ public:
     size_t find(const Item_Type& item) const { // Function to find a number
         Node<Item_Type>* current = head;
         size_t index = 0;
-        while (current != nullptr) { // Update the pointer when it is not null
+        while (current != nullptr) { // Traverse to next node
             if (current->item == item) {
                 return index; // Return the index
             }
@@ -200,7 +200,7 @@ int main() {
     int found_number = 0;
     int index_to_remove = 0;
     Single_Linked_List<int> sll;
-    while (num_items <= 2) // Check to make sure you are less then or equal to num_items 
+    while (num_items <= 2) // Prompt user to add three numbers to the front of the list
     {
         cout << "Please add a number to the front of the list. "; // Ask user to input number to add
         cin >> new_number; // User input of new variable 
@@ -211,7 +211,7 @@ int main() {
     }
     sll.print(); // Exit and print the loop 
 
-    while (num_items <= 4)
+    while (num_items <= 4) // Prompt user to add two numbers to the back of the list
     {
         cout << "Please add a number to the back of the list. "; // Ask for numbers to add to the end of a list 
         cin >> new_number; // Get the input for the new number 
