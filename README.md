@@ -14,9 +14,23 @@ This C++ program implements a single linked list and allows users to perform the
 - Assignment_2.1_CS303.cpp - Main program with all function implementations.
 - Assignment_2.1_CS303.h - Header file containing file declarations.
 
-## How to Run
+## How to Run + Functionality
 1. Open the project in your C++ IDE (Visual Studio)
-2. Make sure Assignment_2.1_CS303.h
+2. Make sure you are in the correct project directory, containing Assignment_2.1_CS303.cpp and Assignment_2.1_CS303.h.
+3. Build and run the program.
+4. Follow the on-screen prompts and the expected output order is:
+   - The user is asked to input three numbers to add to the front of the list.
+   - The list is then displayed in its entirety.
+   - The user is asked to input two numbers to add to the back of the list.
+   - The whole list is displayed once more.
+   - The program pops the front of the list, including the popped number as well as the full list post pop.
+   - The user is then asked to input an index where they wish to insert a number.
+   - The user is asked to input a number they wish to input at the previously inputted index.
+   - The list is then printed in its entirety.
+   - The user is asked for a number to find in the list.
+   - The index of the number is printed if it is found. If it is not found, the size of the list is returned.
+   - The user is asked to input the index of the number they wish to remove.
+   - The list is printed once more.
 
 <img width="1726" height="754" alt="Screenshot 2025-10-15 175925" src="https://github.com/user-attachments/assets/172cb412-ca21-479c-ac39-902fdf44d185" />
 <img width="1729" height="780" alt="Screenshot 2025-10-15 180003" src="https://github.com/user-attachments/assets/22ba2445-4dc5-47c5-bacd-0fd2af65d5c0" />
